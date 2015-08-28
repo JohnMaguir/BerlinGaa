@@ -2,7 +2,7 @@ actions = require './actions'
 
 store = Reflux.createStore
   init: ->
-    @model = text: 'All the way from the store'
+    @model = text: 'Message all the way from the store'
     @listenToMany(actions)
 
   getInitialState: -> @model
